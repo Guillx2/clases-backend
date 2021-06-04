@@ -1,0 +1,4 @@
+Pasos a seguir para la realización de este proyecto:
+
+1. Abrir la carpeta con el terminal y ejecutar npm init -y 
+2. 

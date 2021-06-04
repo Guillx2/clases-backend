@@ -1,0 +1,101 @@
+Pasos a seguir para la realización de este proyecto:
+    (para arrancar el servidor usamos npm run dev)
+
+1. Abrir la carpeta con el terminal y ejecutar  (para el JSON):
+        npm init -y
+
+
+    Ahora hay que instalar todas las dependencias que vamos a necesitar y son las siguientes:
+        
+        - ESlint: para detectar errores.
+        - Nodemon: para reiniciar el servidor automáticamente al guardar.
+        - Prettier: para formatear el código (colocarlo bonito).
+
+        - Express: es el framework que usaremos de Node.
+        - Dotenv: para cargar variables de entorno con .env .
+        - Body-parser: para crear middlewares.
+        - Morgan: registrador de solicitudes HTTP para Node.
+        - Mysql2: para interactuar entre la base de datos y el backend.
+
+        - Faker: es una librería que genera datos falsos. Más info en npmjs.com/package/faker
+        - Lodash: 
+
+2. Para instalar eslint, nodemon y prettier. Ejecutar:
+        npm install eslint nodemon prettier -D
+
+3. Para configurar eslint. Ejecutar:
+        npx eslint --init 
+    respuestas:
+    - To check syntax and find problems
+    - CommonJS (require/exports)
+    - None of these
+    - No
+    - Node 
+    - JavaScript
+
+4. Para instalar "express", "dotenv", "body-parser", "morgan" y "mysql2". Ejecutar: 
+        npm install express dotenv body-parser morgan mysql2
+
+5. Crear el archivo .env con los datos necesarios. (Ver archivo .env)
+
+6. Abrir MySQLWorkbench y crear la base de datos. (CREATE DATABASE diario;)
+
+7. Abrir el package.json y despues del "1" escribir:
+        ...exit 1",
+        "dev": "nodemon server.js"
+
+8. Crear un archivo para conectar la base de datos (mirar db.js).
+
+9. Creamos las tablas de la base de datos (la podemos crear con MySQL o con el propio Node).
+Vamos a hacerlo con Node. Creamos el archivo initDB.js (mirar initDB.js).
+
+10. Ahora vamos a añadir contenido (ficticio) a la base de datos. Para ello instalamos 
+dos nuevos módulos. Ejecutar:
+        npm install faker lodash
+
+11. Para pasar el formato de fecha de SQL a JS instalamos "date-fns". Ejecutar:
+        npm install date-fns
+
+12. Creamos el archivo "helpers.js". Es un archivo donde vamos a guardar diferentes 
+funciones para utilizar en diferentes cosas.
+
+Ya tenemos una base de datos de prueba con contenido ficticio y que se reinicia cada
+vez que la ejecutamos. 
+Ahora vamos a crear el servidor para trabajar con esta base de datos.
+
+13. Creamos el archivo "server.js". Aquí crearemos el servidor.
+
+14. Creamos la carpeta de controladores (controllers). Dentro de esta creamos la carpeta "entries".
+
+15. Creamos nuestro primer controlador en la carpeta "entries". Lo llamamos listEntries.js
+
+16. Abrir Postman. En la columna de la izquierda, en Collections, podemos crear colecciones. Las colecciones
+son carpetas donde meter peticiones. 
+
+17. Creamos una colección. Le llamamos API Diario de Viajes.
+
+18. En la columna de la izquierda, le damos clic a los 3 puntos de nuestra colección y le damos a "Add Request".
+Le llamamos "Listar Entradas". Guardamos.
+
+19. Clicamos en Listar Entradas y en la barra introducimos y enviamos:
+    GET     http://localhost:3000/entries
+
+20. Creamos otra Request como la anterior. Punto 18. Le llamamos "Buscar Entradas".
+
+21. Creamos una URL con un parámetro que se llame "search" y con value "West".
+Lo llamamos en listEntries.js .
+
+22. Creamos el archivo getEntry.js. 
+
+23. Creamos el archivo newEntry.js para el POST (raw - JSON en Postman para las Entradas
+y form-data - tipo texto y tipo file. Mirar Postman).
+
+24. Instalamos el módulo de express "File Upload". Ejecutamos:
+        npm install express-fileupload
+
+25. En el archivo newEntry.js creamos la subida de fotos.
+
+26. Añadimos información al .env (UPLOADS_DIRECTORY).
+
+27. Instalar "fs extra". Ejecutar:
+                npm install fs-extra

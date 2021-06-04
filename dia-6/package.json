@@ -1,0 +1,23 @@
+{
+  "name": "dia-6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "-": "0.0.1",
+    "chalk": "^4.1.0",
+    "date-fns": "^2.16.1",
+    "eslint": "^7.15.0",
+    "g": "^2.0.1",
+    "npm": "^6.14.10",
+    "prettier": "^2.2.1",
+    "sharp": "^0.26.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

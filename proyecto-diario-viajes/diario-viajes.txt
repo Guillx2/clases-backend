@@ -1,0 +1,21 @@
+EJERCICIO DIARIO DE VIAJES
+
+    - Se trata de una web donde los usuarios publican entradas sobre viajes.
+    - Cada entrada tiene un título. descripción, lugar y hasta 3 fotos asociadas.
+    - Cada entrada puede ser votada con una puntuación de entre 1 y 5.
+
+    API Endpoints:
+
+    MIÉRCOLES:
+
+        -GET - /entries - JSON con la lista de todas las entradas.
+        -GET - /entries/:id - JSON que muestra información de una entrada.
+        -POST - /entries - crea una entrada.
+        -PUT - /entries/:id - edita el título, descripción o lugar de una entrada.
+        -DELETE - /entries/:id - borra una entrada.
+
+    JUEVES:
+
+        -POST - /entries/:id/images - añade una imagen o una entrada.
+        -DELETE - /entries/:id/images/:imageID - borra una imagen de una entrada.
+        -POST - /entries/:id/vodes - vota una entrada.

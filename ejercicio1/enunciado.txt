@@ -1,0 +1,7 @@
+
+Hacer un script de node que al ejecutarlo responda con el número
+
+de minutos que pasaron desde la última vez que se ejecutó o con
+
+un mensaje que indique que es la primera vez que se ejecuta.
+ 

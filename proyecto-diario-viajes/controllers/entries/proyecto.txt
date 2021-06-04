@@ -1,0 +1,16 @@
+GET - /categorias - JSON con lista de todas las categorias
+
+GET - /categorias/nombreCategoria- JSON que devuelve una lista de una categoria en concreto
+
+GET - /categorias/nombreCategoria/idAnuncio - JSON que muestra informacion de un idAnuncio
+
+POST - /vender - Crea un producto y lo pone a la venta
+
+PUT - /categorias/nombreCategoria/idanuncio - edita el titulo, descripcion o precio de un producto
+
+DELETE - /categorias/nombreCategoria/id:anuncio - Elimina un anuncio
+
+POST - /categorias/nombreCategoria/idanuncio/fotos - Añade una varias fotos 
+
+DELETE - /categorias/nombreCategoria/idanuncio/fotos/fotosId - borra una o varias fotos 
+

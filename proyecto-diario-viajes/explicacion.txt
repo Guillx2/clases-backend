@@ -1,0 +1,16 @@
+EL SERVIDOR.
+
+Creé el servidor. 
+Para crear el servidor lo único que hago es cargar dotenv 
+para tener disponibles todas las variables de entorno que tengo definidas en 
+el .env.
+Cargo express (permite crear el servidor) y cargo morgan (permite listar las peticiones 
+en la consola y da información de si hay error, el tiempo que tardó y el tamaño de la 
+petición).
+Desestructuro el PORT de process env.
+Creo la app de express.
+Aplico el middleware de morgan 
+Creo un middleware de error donde van a pasar los errores que mande cuando llame a next
+con error.
+Creo el middleware de 404 donde acabarán todas las peticiones que no recojan ninguna ruta
+Lanzo el servidor.

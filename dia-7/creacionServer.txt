@@ -1,0 +1,37 @@
+Instalamos los módulos de:
+
+    -Eslint: 
+
+    -Prettier: coloca el codigo bonito cada vez que se guarda.
+
+    -Nodemon: para aplicar los cambios al guardar, sin necesidad
+    de volver a escribir node server.js en el terminal.
+    Para esto tenemos que configurar el package.json y poner la 
+    linea de "start": "nodemon server.js". Así, al ejecutar 
+    "npm start" ya se queda el server abierto y aplica los cambios
+    de forma instantánea.
+
+Para instalarlos todos juntos:
+
+    npm install eslint prettier nodemon -de
+
+
+Instalamos el package.json
+
+    npm init -y
+
+
+Instalamos el dotenv:
+
+    npm install dotenv
+
+
+Configuramos Eslint:
+
+    npx eslint --init
+
+
+POSTMAN APP:
+Es un cliente http. Nos permite crear peticiones http y 
+configurarlas como queremos. Explicación en la grabación del 
+10 de Diciembre minuto -47
